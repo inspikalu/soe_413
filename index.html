@@ -44,7 +44,6 @@
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
-            text-transform: capitalize;
         }
 
         .member-card:hover {
@@ -55,11 +54,15 @@
             border-left: 5px solid #e74c3c;
         }
 
-        .member-name {
-            color: #2c3e50;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
+      .member-name {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: lowercase; 
+}
+.member-name::first-letter {
+    text-transform: uppercase; 
+}
 
         .member-id {
             color: #7f8c8d;
